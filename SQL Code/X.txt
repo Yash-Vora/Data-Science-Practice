@@ -1,0 +1,82 @@
+int : 2,14,74,83,647
+Sql Server:
+SQL Server is a Microsoft product used to manage and store information. Technically, SQL Server is a “relational database management system” (RDBMS). Broken apart, this term means two things. First, that data stored inside SQL Server will be housed in a “relational database”, and second, that SQL Server is an entire “management system”, not just a database. SQL itself stands for Structured Query Language. This is the language used to manage and administer the database server.
+
+Server
+Database (table,function,view,trigger,Stored Procedure)
+Table
+Data
+
+comment (single line comment, multy line comment)
+
+ddl : create, alter (add,drop,alter), drop, rename (execute SP_RENAME '<old_name>', '<new_name>') , truncate
+dml : insert, update, delete
+(tcl : commit, rollback, savepoint
+dcl : grant, revoke) --covered last
+
+constraint (primary key,unique,check,foreign key,default,not null)
+cascading
+
+where
+between
+in
+like
+
+join
+group by
+set operator (union, union all, intersect, except)
+
+order by
+top
+distinct
+print
+variable
+loop
+case/iif
+if, else
+try catch
+
+cte (Common Table Expression):
+A cte is a named temporaary result set that exist only within the execution. Scope of a single sql statement.
+
+view:
+A view is like a subset of a table which is stored logically in a database. A view is a virtual table.
+
+
+temporary tables : local temporary table, global temporary table
+table variable
+
+
+function(inbuilt function and user define function)
+
+aggregate function:
+avg,sum,count,min,max
+
+ranking function:
+rank,dense_rank,row_number,ntile
+
+analytic function:
+lead,lag,first_value,last_value
+
+String Functions : ascii, char, TRIM(2017), ltrim, rtrim, lower, upper, reverse, len, DATALENGTH, left, right, charindex, patindex, substring, 
+					replicate, space, replace, stuff, CONCAT, QUOTENAME, CONCAT_WS(2017)
+
+math function : abs, ceiling, floor, power, rand, square, sqrt, round
+
+date-time functions : CURRENT_TIMESTAMP,getdate,sysdatetime,DATEADD,datediff,DATEFROMPARTS,DATENAME,DATEPART,day,month,year,getutcdate,ISDATE
+
+Advanced function : Coalesce, exists, null, Cast, Convert
+
+
+user define function: (Scalar Valued, Table Valued)
+a function is a sp that you can pass parameters into and then return value
+
+
+sp:
+a sp is a set of sql statement
+
+trigger:
+a trigger is set of action that are run autometically when a specified change operation is performed on a specified table/db.
+
+index: (Clustered Index, Non-Clusterd Index)
+Indexes are used in relational databases to quickly retrieve the data. The Non-Clusterd index can be created on one column or a group of columns.

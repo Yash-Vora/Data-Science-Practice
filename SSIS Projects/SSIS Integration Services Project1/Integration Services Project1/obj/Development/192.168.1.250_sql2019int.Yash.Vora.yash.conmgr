@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.1.250_sql2019int.Yash.Vora.yash"
+  DTS:DTSID="{27B1C42C-0D25-4924-8DF0-53DD53375153}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::Password]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::User]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=192.168.1.250\sql2019int;User ID=yash;Initial Catalog=Yash.Vora;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6KBEVfMxTkCkeNPg5U9+KgAAAAACAAAAAAAQZgAAAAEAACAAAAAH3MrQvVFvpQtpnzaBjsp1kdTXAejG8zI4cCXQ/jgbuAAAAAAOgAAAAAIAACAAAAD5FtcMHJazo50lr+5YOnG9KTgVyOcsV49RQ8JgjDzXGnAAAAB+XUIKCWgmVSjSNqdIwPFlShDTd6vYOn4WYwbG+A5HU3jG/uGEXXOHB+oH7BwS12J5X7A3dXSobk+DekMDCzuqnEKKFTMVNSMmEN+af52M4eNUaqz3Y/h0IiJsoqFLHtnkxW0uRS7gBlIAKL90HE88QAAAAMgkkngC1Qd9/tQ6AS4NLOR3Q6pYo1XE6B6Cl/xlUVYRB4kNTNJKVhGEbrRUZ6+F7biMbb/1weJbJTK1GI2Pt3U=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

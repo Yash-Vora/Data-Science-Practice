@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/5/2022 2:31:06 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="KCSLAP5290"
+  DTS:CreatorName="KCSITGLOBAL\yash.vora"
+  DTS:DTSID="{1F3247E7-2278-4F31-A191-01E2B7B31350}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{DBE3C412-0AD1-4566-AD06-95D589BACD2A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\sql2019int.Yash.Vora.yash]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{158E567E-50B6-4D81-9B50-B68F0210B4EF}"
+      DTS:ObjectName="192.168.1.250\sql2019int.Yash.Vora.yash">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\sql2019int;User ID=yash;Initial Catalog=Yash.Vora;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6KBEVfMxTkCkeNPg5U9+KgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC9P+gCUCyo7+/NcMPjeXPmWcNZTd9lAIAGcVK585omIgAAAAAOgAAAAAIAACAAAAA+GX1pFWjPo/hRNYL/6mbqhkVjgeBZsNU8oQGk+VZ2shAAAADfWOZgAxxyB7vcfvHWFU4zQAAAAFp+1G/v8MLUeNIIVbAlqK8/9f1HgxbmkQpFK2/qTZPnfaLNdhpfLYBJ69SBaCsFfb7p71wPFjS6p4BWItSPfKc</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9276A881-458A-421B-B874-6B2BC6E1B793}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File.xlsx;Extended Properties=&quot;EXCEL 3.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E1000CE7-986A-48DE-A593-541891A785F3}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File.xlsx;Extended Properties=&quot;EXCEL 3.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{28C53395-22D5-4262-8171-19CAB127FF0E}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File2.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B703EADA-E782-46AE-9D93-282A57468E88}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File2.xlsx;Extended Properties=&quot;EXCEL 3.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{0BD97345-AEFB-4AFB-9504-873EF1159DA2}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File2.xlsx;Extended Properties=&quot;EXCEL 3.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{139E1402-6AAE-407B-B643-BE8747FC145E}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File.xlsx;Extended Properties=&quot;EXCEL 3.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel File.xlsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{EA5CF8FF-5882-45E0-B12A-E3E474448406}"
+      DTS:ObjectName="Excel File.xlsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Data Science Training\SSIS Projects\Excel File.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel File.xlsx 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{5E33366C-7443-44D3-B573-8C4331C4B6C0}"
+      DTS:ObjectName="Excel File.xlsx 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel File.xlsx 2]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{DE2EEFA0-EABC-47AC-A28C-38E3A47C8F10}"
+      DTS:ObjectName="Excel File.xlsx 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel File2.xlsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{04F6A33D-983D-45AA-A922-4C9D90ED22C8}"
+      DTS:ObjectName="Excel File2.xlsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File2.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel File2.xlsx 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{397F36D4-1F7E-47FF-84FC-2EDEC0E9C442}"
+      DTS:ObjectName="Excel File2.xlsx 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash\Excel File2.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SSIS Integration Services Project1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{810B7FE0-85C2-4459-A7A5-8754E12DB3D0}"
+      DTS:ObjectName="SSIS Integration Services Project1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Yash]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{246240B7-94DC-4F55-98AD-9AD8363FA654}"
+      DTS:ObjectName="Yash">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="D:\Data Science Training\SSIS Projects\SSIS Integration Services Project1\Yash" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create Dir &amp; Copy File Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{1F094C5D-20FF-40BC-8CE2-874A8A468008}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Dir &amp; Copy File Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Create Dir &amp; Copy File Sequence Container\Copy File"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{3BE6BF72-8EB1-4623-A4C0-63E2CBDA9DFE}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Copy File"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{EA5CF8FF-5882-45E0-B12A-E3E474448406}"
+              TaskDestinationPath="{246240B7-94DC-4F55-98AD-9AD8363FA654}" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Create Dir &amp; Copy File Sequence Container\Create Directory"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{B33DEED5-9070-40AF-B992-054EAA8B520F}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Create Directory"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="CreateDirectory"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{246240B7-94DC-4F55-98AD-9AD8363FA654}" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Create Dir &amp; Copy File Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{62484F98-ED71-4795-8849-B6102D21A606}"
+          DTS:From="Package\Create Dir &amp; Copy File Sequence Container\Create Directory"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Create Dir &amp; Copy File Sequence Container\Copy File" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\File to SQL and Delete File Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{C4AAEAD8-61DE-47E4-B115-12DF27724270}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="File to SQL and Delete File Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{1F4E6203-2074-4A71-8A6B-6EAF7AF7FF04}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Copied File to SQL"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Sheet1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 5]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 5]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[id]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].ExternalColumns[id]"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[name]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].ExternalColumns[name]"
+                          length="255"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[name]"
+                          name="name"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[qty]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].ExternalColumns[qty]"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[qty]"
+                          name="qty"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].ExternalColumns[id]"
+                          dataType="r8"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].ExternalColumns[name]"
+                          dataType="wstr"
+                          length="255"
+                          name="name" />
+                        <externalMetadataColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].ExternalColumns[qty]"
+                          dataType="r8"
+                          name="qty" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[id]"
+                          dataType="r8"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[name]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[name]"
+                          name="name" />
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[qty]"
+                          dataType="r8"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[qty]"
+                          name="qty" />
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[ExcelToSQLDest]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[192.168.1.250\sql2019int.Yash.Vora.yash]"
+                      connectionManagerRefId="Package.ConnectionManagers[192.168.1.250\sql2019int.Yash.Vora.yash]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedDataType="r8"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[name]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="name"
+                          externalMetadataColumnId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[name]" />
+                        <inputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[qty]"
+                          cachedDataType="r8"
+                          cachedName="qty"
+                          externalMetadataColumnId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[qty]"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output].Columns[qty]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          dataType="r8"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                          dataType="wstr"
+                          length="255"
+                          name="name" />
+                        <externalMetadataColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[qty]"
+                          dataType="r8"
+                          name="qty" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL.Paths[Excel Source Output]"
+                  endId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\File to SQL and Delete File Sequence Container\Delete File"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{E8B3EFD3-CA8D-4482-B1DE-A8804CDBA651}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete File"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskSourcePath="{DE2EEFA0-EABC-47AC-A28C-38E3A47C8F10}" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\File to SQL and Delete File Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{030B5456-9B22-4B5F-9BB0-9B94B433A7FF}"
+          DTS:From="Package\File to SQL and Delete File Sequence Container\Copied File to SQL"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\File to SQL and Delete File Sequence Container\Delete File" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="122.4,41.6"
+          Id="Package\Create Dir &amp; Copy File Sequence Container\Copy File"
+          TopLeft="68.7333198891751,137.233334380256" />
+        <EdgeLayout
+          Id="Package\Create Dir &amp; Copy File Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="130.016653537088,73.9666668801837">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.2666675000721"
+              Start="0,0"
+              End="0,55.7666675000721">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.7666675000721" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Create Dir &amp; Copy File Sequence Container\Create Directory"
+          TopLeft="52.8999871850018,32.3666668801837" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="242.4,233.6"
+          Size="242.4,276.8"
+          Id="Package\Create Dir &amp; Copy File Sequence Container"
+          TopLeft="29.1666655076875,60.6666671488019" />
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\File to SQL and Delete File Sequence Container\Copied File to SQL"
+          TopLeft="38.4666443480397,27.0000022935867" />
+        <NodeLayout
+          Size="128,41.6"
+          Id="Package\File to SQL and Delete File Sequence Container\Delete File"
+          TopLeft="50.9999827146539,137.133335268763" />
+        <EdgeLayout
+          Id="Package\File to SQL and Delete File Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="118.333313531347,68.6000022935867">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68.5333329751759"
+              Start="0,0"
+              End="0,61.0333329751759">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.0333329751759" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="256,233.6"
+          Size="256,276.8"
+          Id="Package\File to SQL and Delete File Sequence Container"
+          TopLeft="384.166651401256,63.266667169465" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\File to SQL and Delete File Sequence Container\Copied File to SQL">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source"
+          TopLeft="153.333327240414,73.6666672521167" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination"
+          TopLeft="139.16666113668,225.333335124122" />
+        <EdgeLayout
+          Id="Package\File to SQL and Delete File Sequence Container\Copied File to SQL.Paths[Excel Source Output]"
+          TopLeft="224.049994188547,115.266667252117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,110.066667872005"
+              Start="0,0"
+              End="0,102.566667872005">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,102.566667872005" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\File to SQL and Delete File Sequence Container\Copied File to SQL\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

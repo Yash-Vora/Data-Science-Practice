@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.1.250_sql2019int.AdventureWorks2014.yash"
+  DTS:DTSID="{3626C4A4-BDE4-4CE9-8708-07F20DBD7BE7}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::Password]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::User]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=192.168.1.250\sql2019int;User ID=yash;Initial Catalog=AdventureWorks2014;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6KBEVfMxTkCkeNPg5U9+KgAAAAACAAAAAAAQZgAAAAEAACAAAADJJPXHM57cxvwaCb0lHZRDgOHyQbFK9tVFHeBHwHCyBgAAAAAOgAAAAAIAACAAAAABEl7SoglCw5p9QavaxyyZ47svsQsxQ14M4hwp5MwHl3AAAAA65my44LaJ/jL0Mfa+SmChdVGWWS1r3ruPRg5thg6XGK2HzPCVt2J3ZtK72KCnotCnfU25xoVb/JKiRzpw/OjEeuHuAe95+c0zhYENffkz0Mw1ZSalhLdPGIyCZ5iMxMs4viAfNw80gSeQXsyNvO2HQAAAAG5q3aU1ah0CHyAo1k7/r6DO8Bg/XHjILIHPxrl0DWZ90KVSFcrC56ENf0wH7yD4H/sKV+v9isIH7zhUf7fsyrI=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
